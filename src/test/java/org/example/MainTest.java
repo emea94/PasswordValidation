@@ -52,14 +52,14 @@ class MainTest {
     }
 
     @Test
-    void passwordIsValid_whenPasswordIsCommonlyUsed_thenReturnFalse() {
+    void passwordIsValid_whenPasswordIsCommonlyUsed_thenReturnTrue() {
         //Given
         String passwort5 = "Passwort123";
         boolean expected = false;
         //When
         boolean actual = passwortValidation.passwordIsValid(passwort5);
         //Then
-        assertTrue(actual);
+        assertFalse(actual);
     }
 
 }

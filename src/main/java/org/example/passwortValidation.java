@@ -46,7 +46,7 @@ public class passwortValidation {
         }
 
         // And a method should detect commonly used passwords.
-        String[] commonPasswords = {"password", "passwort", "123456", "abcdef", "Passwort123"};
+        String[] commonPasswords = {"password1", "welcome1", "abcd1234", "quertz12", "passwort123"};
 
         for (String commonPassword : commonPasswords) {
             if (passwort.toLowerCase().equals(commonPassword)) {
